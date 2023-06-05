@@ -1,0 +1,28 @@
+/*
+    box-size : 250px * 37px
+    grey : #CCCCCC;
+    border-radius : 34px;
+    image-size : 16 * 17px;
+    padding : 16px 8px 8px 8px;
+    이미지랑 글자 사이 여백 : 4px;
+
+*/
+
+
+ul, ol {
+    list-style : none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.validation-list{
+
+}
+
+.validation-list li{
+    background: url(./../mission-01/images/validation_icon\ 2.png)
+    no-repeat;
+}
