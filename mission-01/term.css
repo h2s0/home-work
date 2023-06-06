@@ -1,0 +1,116 @@
+/*
+    겉 박스
+    width : 250px; height : auto;
+    radius : 5px;
+    padding 16px;
+    top : 279px;
+    color : #CCCCCC, #EEEEEE
+    border : 1px #A3A3A3
+*/
+/* 
+    h3
+    왼위 16 오 162 아 220
+    weight 700
+    size 15
+    line height : 22.5px;
+    font : pretendard
+    color : #000000; 
+*/
+/*
+    안 div
+    widht : 218px; height : auto: top, left, gap: 16px;
+
+    image
+    width 60 height 68 background
+
+    웹표준이란?
+    #296897, size 14px; line height 21px; weight 700
+
+    이미지, 글자 사이 간격 16px
+
+    글자 글자 사이 간격 4
+
+    설명 글자
+    width 142px; weight 400 size 14px line height 21px #181818
+
+    글자 박스 두개 사이 12px
+*/
+
+@import url(./base.css);
+@import url(./reset.css);
+
+body{
+    font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.web-term {
+
+    margin: 30px;
+
+    width: 250px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    background: linear-gradient(#cccccc, #eeeeee);
+    display: block;
+
+}
+
+h3{
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.web-term-list{
+    margin: 16px 16px 0 0;
+    width: 218px;
+    display: flow-root;
+}
+
+.dt{
+    color: #296897;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: inline;
+    line-height: 1.3125rem;
+}
+
+.dt1{
+    margin-left: 16px;
+}
+
+.img1{
+    float: left;
+}
+
+.img2{
+    float: right;
+}
+
+.txt{
+    width: 142px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: #181818;
+    margin-top: 4px;
+}
+
+.txt1{
+    float: right;
+    margin-left: 16px;
+}
+
+.txt2{
+    margin-right: 16px;
+}
+
+.list1{
+    margin-bottom: 12px;
+}
