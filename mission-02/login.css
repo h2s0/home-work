@@ -50,8 +50,6 @@ body{
 
 /* 전체 칸 */
 .box-wrapper{
-
-margin: 50px;
     box-sizing: border-box;
     width: 244px;
     height: 161px;
@@ -100,19 +98,14 @@ legend {
     box-sizing: border-box;
 }
 
-.login-group {
-    margin-top: ;
-  
+/* 아이디, 비밀번호 글자와 입력칸 */
+.id-input, .ps-input {
+    height: 1.5rem;
 }
-
 
 /* 아이디 글자와 입력칸 */
 .id-input {
     margin-bottom: 0.25rem;
-}
-
-.id-input, .ps-input {
-    height: 1.5rem;
 }
 
 /* 아이디, 비밀번호 글자 */
@@ -122,7 +115,6 @@ legend {
     color: var(--black);
     width: 56px;
     display: inline-block;
-    height: 100%;
 }
 
 /* 아이디, 비밀번호 입력 칸 */
