@@ -1,0 +1,22 @@
+:root {
+
+    --orange: #ED552F;
+    --light-orange: #E8852E;
+    --yellow: #FFFF00;
+    --white: #ffffff;
+    --gray: #7A7A7A;
+    --light-gray: #CCCCCC;
+    --black: #000000;
+    --down-black: #181818;
+
+
+    --primary-color: var(--orange);
+    --secondary-color: var(--light-orange);
+    --accent-color: var(--yellow);
+
+
+    --border-color: var(--light-gray);
+    --placeholder-color: var(--gray);
+
+    --label-text: var(--black);
+}

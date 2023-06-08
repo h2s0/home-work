@@ -1,0 +1,189 @@
+/*
+큰 박스
+
+width : 244px height : 161px - hug
+radius : 5px; padding : 12px; gap : 8px;
+background: linear-gradient(90deg, #ED552F 0%, #E8852E 100%);
+box-shadow: 5px 5px 0px 0px #AAAAAA;
+
+로그인 텍스트
+width 39 height 23 - hug
+weight 700 size 15px line height 22.5px
+color : #FFFF00;
+
+흰색 칸
+background: #FFFFFF;
+border-radius : 5px;
+width 220 height 106 -hug
+
+흰색 칸 위 padding 8px; border-radius: 5px 5px 0px 0px;
+
+아이디 비밀번호 글자 width 56px;
+아이디 top 9.5 left 8
+비밀번호 bottom 11.5 left 8
+
+입력 칸 width 90px; height 24px; padding 0 0 0 8px;
+color: #CCCCCC; border: 1px solid #CCCCCC; radius 5px
+
+로그인 버튼 width 50px; height 53px; top 8 right 8
+radius 5px padding 4; background: #ED552F;
+
+흰색 칸 아래 width 220px; top 70px; padding 4 8 4 8px;
+border-radius: 0px 0px 5px 5px;
+
+회원가입 padding 4 0 4 0 left 8 top 4
+아이디비번찾기 top 4 left 87 padding 4 0 4 0
+
+
+*/
+
+@import url(normal.css);
+@import url(theme.css);
+@import url(reset.css);
+
+body{
+    font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 전체 칸 */
+.box-wrapper{
+
+margin: 50px;
+    box-sizing: border-box;
+    width: 244px;
+    height: 161px;
+    box-shadow: 5px 5px 0px 0px #AAAAAA;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--light-orange) 100%);
+    border: 0;
+    border-radius: 0.3125rem;
+    padding: 0.75rem;
+    position: relative;
+}
+
+/* 노랑 로그인 글씨 */
+.login-text{
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 0.9375rem;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+}
+
+/* 접근성을 위한 텍스트 숨김 */
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* 로그인 칸 */
+.login-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+    width: 220px;
+    height: 69px;
+    position: absolute;
+    top: 43px;
+    left: 12px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.login-group {
+    margin-top: ;
+  
+}
+
+
+/* 아이디 글자와 입력칸 */
+.id-input {
+    margin-bottom: 0.25rem;
+}
+
+.id-input, .ps-input {
+    height: 1.5rem;
+}
+
+/* 아이디, 비밀번호 글자 */
+.id-input-label, .ps-input-label {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--black);
+    width: 56px;
+    display: inline-block;
+    height: 100%;
+}
+
+/* 아이디, 비밀번호 입력 칸 */
+.id-input-input, .ps-input-input{
+    border: 1px solid var(--border-color);
+    border-radius: 0.3125rem;
+    width: 5.625rem;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* 로그인 버튼 */
+.login-button{
+   cursor: pointer;
+   border: 0;
+   border-radius: 0.3125rem;
+   width: 3.125rem;
+   height: 3.3125rem;
+   padding: 0.25rem;
+   background-color: var(--primary-color);
+   color: var(--white);
+   font-size: 0.8125rem;
+   font-weight: 400;
+   box-sizing: border-box;
+}
+
+/* 회원가입, 아이디 비밀번호 찾기 칸 묶음 */
+.option-group{
+    width: 13.75rem;
+    height: 2.25rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--white);
+    border-radius:  0rem 0rem 0.3125rem 0.3125rem;
+    position: absolute;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    box-sizing: border-box;
+}
+
+/* 회원가입, 아이디 비밀번호 찾기 칸 */
+.join, .find {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 회원가입 */
+.join{
+    float: left;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.21875rem;
+    color: var(--down-black);
+}
+
+/* 아이디 비밀번호 찾기 */
+.find{
+    float: right;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.21875rem;
+    color: var(--down-black);
+}
+
