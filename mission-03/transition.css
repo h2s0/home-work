@@ -26,9 +26,8 @@ body{
 
 /* 관련 사이트 글씨 */
 .site-text{
-    font-size: 0.9375rem;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 1.40625rem;
     color: #181818;
     margin-bottom: 8px;
 }
@@ -37,26 +36,40 @@ body{
     color: #ED552F;
 }
 
+/* 초기값 */
 .site-list-wrapper{
     width: 166px;
-    height: 145px;
     background: #fff;
     border: 1px solid #A3A3A3;
     border-radius: 5px;
-    position: relative;
-    display: block;
+    overflow: hidden;
+    height: 29px;
+    transition: height, 1s;
+}
+
+/* hover 결과값 */
+.site-list-wrapper:hover{
+    height: 175px;
 }
 
 .site-list{
-    position: absolute;
-    left: 28px;
-    top: 4px;
+    overflow: hidden;
+    transition: padding-top 400ms 1000ms ease-in-out;
 }
 
-.list{
+.site-list:hover{
+    padding-top: 15px;
+}
+
+.site-list li{
     font-size: 14px;
     font-weight: 400;
-    line-height: 21px;
     color: #181818;
+}
+
+.site-list a{
+    padding-left: 24px;
+    display: block;
     height: 29px;
+    line-height: 29px;
 }
