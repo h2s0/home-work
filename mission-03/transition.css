@@ -54,7 +54,7 @@ body{
 
 .site-list{
     overflow: hidden;
-    transition: padding-top 400ms 700ms ease-in-out;
+    transition: padding-top 350ms 700ms ease-in-out;
 }
 
 .site-list:hover{
