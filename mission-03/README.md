@@ -10,8 +10,8 @@
 <div>완성예시</div>
 <div class="left">완성본</div>
 
-<video src="%EC%99%84%EC%84%B1%EC%98%88%EC%8B%9C.mp4" controls title="완성예시" class="complete" autoplay muted></video>
-<video src="%EC%99%84%EC%84%B1%EB%B3%B8.mp4" controls title="완성본" class="complete" autoplay muted></video>
+<video src="./%EC%99%84%EC%84%B1%EC%98%88%EC%8B%9C.mp4" controls title="완성예시" class="complete" autoplay muted></video>
+<video src="./%EC%99%84%EC%84%B1%EB%B3%B8.mp4" controls title="완성본" class="complete" autoplay muted></video>
 
 
 <style>
