@@ -1,0 +1,86 @@
+@import url(reset.css);
+@import url(base.css);
+
+body{
+    font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.news{
+    margin: 100px;
+    border: 1px solid pink;
+
+    width: 380px;
+    height: 200px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3);
+    grid-template-areas: 
+    "news-txt . . . . . . . . plus"
+    "border border border border border border border border border border"
+    "img-wrap img-wrap img-wrap txt-wrap txt-wrap txt-wrap txt-wrap txt-wrap txt-wrap txt-wrap"
+    ;
+}
+
+.news-text{
+    grid-area: news-txt;
+    color: #ED552F;
+    font-weight: 700;
+}
+
+.plus{
+    grid-area: plus;
+    color: #000;
+    font-weight: 400;
+    width: 37px;
+}
+
+.plus a{
+    display: block;
+    width: 57px;
+}
+
+.border{
+    grid-area: border;
+    width: 266px;
+    height: 1px;
+    background: linear-gradient(90deg, #A9A9A9 -1.32%, #FFFFFF 100%);
+    ;
+}
+
+.img-wrapper{
+    grid-area: img-wrap;
+}
+
+.thumbnail{
+
+}
+
+.img-title{
+    font-weight: 400;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.text-wrapper{
+    grid-area: txt-wrap;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.date{
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.description{
+    font-weight: 400;
+    margin-top: 12px;
+}
