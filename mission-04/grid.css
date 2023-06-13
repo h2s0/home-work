@@ -12,14 +12,14 @@ body{
 
 .news{
     margin: 100px;
-    border: 1px solid pink;
+    border: 1px solid lawngreen;
 
     width: 380px;
     height: 200px;
     background: #fff;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3);
+    grid-template-rows: auto;
     grid-template-areas: 
     "news-txt . . . . . . . . plus"
     "border border border border border border border border border border"
@@ -42,7 +42,6 @@ body{
 
 .plus a{
     display: block;
-    width: 57px;
 }
 
 .border{
@@ -58,17 +57,19 @@ body{
 }
 
 .thumbnail{
-
+    box-shadow: 0px 15px 15px 5px #AAAAAA;
+    width: 112px;
 }
 
 .img-title{
     font-weight: 400;
-    margin-top: 16px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .text-wrapper{
     grid-area: txt-wrap;
+    margin-left: 20px;
 }
 
 .title{
